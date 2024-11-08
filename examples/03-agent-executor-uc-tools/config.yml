@@ -1,0 +1,6 @@
+llm_endpoint: "databricks-meta-llama-3-1-405b-instruct"
+warehouse_name: "Starter Warehouse UC"
+catalog: main
+schema: default
+add_function: test_add
+multiply_function: test_multiply
