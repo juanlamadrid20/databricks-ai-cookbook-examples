@@ -1,0 +1,6 @@
+llm_endpoint: "databricks-meta-llama-3-1-405b-instruct"
+
+# fill out the space id
+genie_space_id:
+genie_agent_name:
+genie_space_description:
