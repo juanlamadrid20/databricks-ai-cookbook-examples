@@ -1,0 +1,8 @@
+# ensure that the auth_type is pat
+databricks_auth_type: "pat"
+databricks_token:
+# https://docs.databricks.com/en/security/secrets/secrets.html#syntax-for-referencing-secrets-in-a-spark-configuration-property-or-environment-variable
+# use the {{secrets/<scope-name>/<secret-name>}} syntax
+# if your scope is called 'my-scope' and secret is called 'my-pat' then the value would be
+# {{secrets/my-scope/my-pat}}
+databricks_host:
