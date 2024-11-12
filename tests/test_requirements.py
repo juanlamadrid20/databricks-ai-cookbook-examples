@@ -16,6 +16,8 @@ def test_requirements_ensure_static_versions():
         with open(requirements_txt_path) as f:
             requirements = f.read().split("\n")
         for requirement in requirements:
-            if requirement.strip() and not requirement.startswith("#"):
+            if requirement.strip() and not requirement.startswith("#") and not requirement.startswith("git+"):
                 # TODO: this is a naive checks you may have commit based versions, etc using git+https://
                 assert "==" in requirement, f"Expected to find a static version in {requirement} in {requirements_txt_path}."
+            if requirement.strip() and not requirement.startswith("#") and requirement.startswith("git+"):
+                assert "@" in requirement, f"Expected to find a commit based version in {requirement} in {requirements_txt_path}."

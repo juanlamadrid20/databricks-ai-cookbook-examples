@@ -10,7 +10,7 @@ def zip_directory(folder_path: str, output_path: str):
 
 def main():
     examples_dir = 'examples'
-    dist_dir = 'dist'
+    dist_dir = 'pkg'
 
     if os.path.exists(dist_dir):
         print(f"Removing existing {dist_dir}")

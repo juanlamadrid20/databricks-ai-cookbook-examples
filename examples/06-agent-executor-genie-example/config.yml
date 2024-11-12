@@ -1,5 +1,6 @@
 llm_endpoint: "databricks-meta-llama-3-1-405b-instruct"
-genie_agent_name: "Sustainability Genie Q&A"
+
 # fill out the space id
 genie_space_id:
-genie_space_description: "This Genie space has access to sustainability data"
+genie_agent_name:
+genie_space_description:
